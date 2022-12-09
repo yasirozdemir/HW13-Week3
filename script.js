@@ -1,7 +1,11 @@
+// ex 21
+
 let x = "John";
 let y = "Doe";
 
 console.log(x + "<>" + y);
+
+// ex 22
 
 let obj = {
   name: "Muhammed Yasir",
@@ -9,14 +13,22 @@ let obj = {
   email: "yasirozdmr@gyandex.com",
 };
 
+// ex 23
+
 delete obj.email;
 console.log(obj);
 
+// ex 24
+
 let arrayOf10 = ["a", "b", "c", "d", "e", "f", "g", "h", "i"];
+
+// ex 25
 
 for (let string of arrayOf10) {
   console.log(string);
 }
+
+// ex 26
 
 function randomNumbers(range) {
   let numArr = [];
@@ -25,6 +37,8 @@ function randomNumbers(range) {
   }
   return numArr;
 }
+
+// ex 27
 
 function getMaxAndMin() {
   let numArr = randomNumbers(100);
@@ -38,6 +52,8 @@ function getMaxAndMin() {
 
 getMaxAndMin();
 
+// ex 28
+
 function arrayOfArraysCreator() {
   let arrayOfArrays = [];
   for (let i = 1; i <= 10; i++) {
@@ -47,6 +63,8 @@ function arrayOfArraysCreator() {
 }
 
 arrayOfArraysCreator();
+
+// ex 29
 
 function findTheLongestArray(array1, array2) {
   if (array1.length > array2.length) {
@@ -60,6 +78,8 @@ function findTheLongestArray(array1, array2) {
 
 let array1 = randomNumbers(5);
 let array2 = randomNumbers(8);
+
+// ex 30
 
 findTheLongestArray(array1, array2);
 
@@ -97,11 +117,15 @@ let container = document.getElementById("container");
 
 let tableData = document.getElementsByTagName("td");
 
+// ex 46
+
 for (let data of tableData) {
   data.addEventListener("click", function () {
     data.style.backgroundColor = `rgb(${randomizeBackgroundColor()})`;
   });
 }
+
+// ex 48
 
 for (let data of tableData) {
   data.addEventListener("mouseover", function () {
@@ -109,10 +133,14 @@ for (let data of tableData) {
   });
 }
 
+// ex 34
+
 function changeHeading() {
   let heading = document.getElementsByTagName("h1")[0];
   heading.innerText = "This is the changed heading using JS :)";
 }
+
+// ex 35
 
 function addAnExtraRow() {
   let table = document.getElementsByClassName("table")[0];
@@ -121,12 +149,16 @@ function addAnExtraRow() {
   table.appendChild(newRow);
 }
 
+// ex 36
+
 function addClassToRows() {
   let rows = document.getElementsByTagName("tr");
   for (let row of rows) {
     row.classList.add("test");
   }
 }
+
+// ex 37
 
 function addRedBackgroundToLinks() {
   let aLinks = document.getElementsByTagName("a");
@@ -135,11 +167,15 @@ function addRedBackgroundToLinks() {
   }
 }
 
+// ex 38
+
 function onLoadActions() {
   console.log("Page successfully loaded!");
 }
 
 window.onload = onLoadActions;
+
+// ex 39
 
 function addItemsToUnorderedList() {
   let unorderedList = document.getElementsByTagName("ul")[0];
@@ -148,6 +184,8 @@ function addItemsToUnorderedList() {
   newItem.innerText = "this is the new item added using js";
   unorderedList.appendChild(newItem);
 }
+
+// ex 40
 
 function emptyTheList() {
   let orderedList = document.getElementsByTagName("ol")[0];
@@ -159,12 +197,16 @@ function emptyTheList() {
   }
 }
 
+// ex 41
+
 let links = document.getElementsByTagName("a");
 for (let link of links) {
   link.addEventListener("mouseover", function () {
     alert(link.getAttribute("href"));
   });
 }
+
+// ex 42
 
 function hideImages() {
   let images = document.getElementsByTagName("img");
@@ -174,10 +216,14 @@ function hideImages() {
   }
 }
 
+// ex 43
+
 function hideTable() {
   let table = document.querySelector("table");
   table.classList.toggle("hide");
 }
+
+// ex 44
 
 function sumNumbersInTheTable() {
   let tableInnerData = document.querySelectorAll("td");
@@ -194,14 +240,17 @@ function sumNumbersInTheTable() {
   return sumOfData;
 }
 
+// ex 45
+
 function deleteTheLastLetterFromHeading() {
   let heading = document.getElementsByTagName("h1")[0];
   heading.addEventListener("click", function (event) {
     event.target.innerText = event.target.innerText.slice(0, -1);
   });
 }
-
 deleteTheLastLetterFromHeading();
+
+// ex 47
 
 function deleteRandomTD() {
   let random = Math.floor(Math.random() * tableData.length);
@@ -211,6 +260,8 @@ function deleteRandomTD() {
 
   parent.removeChild(randomTD);
 }
+
+// ex 49
 
 function createTable() {
   let areaForNewTable = document.getElementsByClassName("new-table-div")[0]; // div selected
@@ -227,6 +278,8 @@ function createTable() {
     }
   }
 }
+
+// ex 50
 
 function deleteTable() {
   let areaForNewTable = document.getElementsByClassName("new-table-div")[0];
