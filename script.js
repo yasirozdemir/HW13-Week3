@@ -230,7 +230,7 @@ function createTable() {
 
 function deleteTable() {
   let areaForNewTable = document.getElementsByClassName("new-table-div")[0];
-  let tableToBeDeleted = document.querySelectorAll(".new-table-div table")[0];
+  let tableToBeDeleted = document.querySelectorAll(".new-table-div table")[0]; // TODO: how to find the last index
 
   tableToBeDeleted.innerHTML = ""; // deleting all related to html
 
