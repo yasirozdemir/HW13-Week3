@@ -1,7 +1,7 @@
 let x = "John";
 let y = "Doe";
 
-console.log(x, y);
+console.log(x + "<>" + y);
 
 let obj = {
   name: "Muhammed Yasir",
