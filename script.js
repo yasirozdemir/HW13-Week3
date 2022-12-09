@@ -213,10 +213,26 @@ function deleteRandomTD() {
 }
 
 function createTable() {
-  let areaForNewTable = document.getElementById("new-table-div"); // div selected
+  let areaForNewTable = document.getElementsByClassName("new-table-div")[0]; // div selected
 
   let newTable = document.createElement("table"); // table created
-  areaForNewTable.appendChild(newTable);
+  areaForNewTable.appendChild(newTable); // table appended
+
+  for (let i = 1; i <= 4; i++) {
+    let newTR = document.createElement("tr"); // tr created
+    newTable.appendChild(newTR); // tr appended to the table
+    for (let j = 1; j <= 3; j++) {
+      let newTD = document.createElement("td"); // td created
+      newTR.appendChild(newTD); // td appended
+    }
+  }
 }
 
-function removeTable() {}
+function deleteTable() {
+  let areaForNewTable = document.getElementsByClassName("new-table-div")[0];
+  let tableToBeDeleted = document.querySelectorAll(".new-table-div table")[0];
+
+  tableToBeDeleted.innerHTML = ""; // deleting all related to html
+
+  areaForNewTable.removeChild(tableToBeDeleted); // deleting the table
+}

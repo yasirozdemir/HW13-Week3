@@ -73,3 +73,12 @@ td {
 .red-background-color {
   background-color: red;
 }
+
+.new-table-area {
+  text-align: center;
+}
+
+table {
+  margin-inline: auto;
+  margin-bottom: 50px;
+}
