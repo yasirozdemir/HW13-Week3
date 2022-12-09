@@ -6,9 +6,10 @@ body {
 
 h1 {
   text-align: center;
+  cursor: pointer;
 }
 
-.container{
+#container{
   width: 70%;
   margin-inline: auto;
   text-align: center;
@@ -37,8 +38,8 @@ p {
   font-weight: 700;
 }
 
-.make-me-hidden {
-  display: hidden;
+.hide {
+  visibility: hidden;
 }
 
 .photo-including-div {
@@ -65,3 +66,10 @@ td {
   padding: 0;
 }
   
+.pink-border {
+  border: solid 3px pink;
+}
+
+.red-background-color {
+  background-color: red;
+}
