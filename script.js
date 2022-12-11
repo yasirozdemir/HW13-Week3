@@ -133,6 +133,12 @@ for (let data of tableData) {
   });
 }
 
+// ex 33
+
+for (let data of tableData) {
+  console.log("Inner text of td elements:", data.innerText);
+}
+
 // ex 34
 
 function changeHeading() {
