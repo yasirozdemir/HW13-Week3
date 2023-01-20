@@ -295,3 +295,22 @@ function deleteTable() {
 
   areaForNewTable.removeChild(tableToBeDeleted); // deleting the table
 }
+
+// RANDOM NUM GENERATOR
+
+function generateRandomNumber() {
+  let selectedArray = [];
+  let random = 0;
+
+  for (let i = 0; i < 10; i++) {
+    random = Math.floor(Math.random() * 10) + 1;
+    selectedArray[i] = random;
+    console.log(selectedArray);
+
+    if (selectedArray.includes(random)) {
+      random = Math.floor(Math.random() * 10) + 1;
+      selectedArray[i] = random;
+    }
+  }
+  console.log(selectedArray);
+}
